@@ -158,4 +158,13 @@ class Register extends \Magento\Directory\Block\Data
     {
         return (bool)$this->httpContext->getValue(\Magento\Customer\Model\Context::CONTEXT_AUTH);
     }
+    /**
+     * test customer login status
+     *
+     * @return bool
+     */
+    public function testFunction()
+    {
+        return (bool)$this->httpContext->getValue(\Magento\Customer\Model\Context::CONTEXT_AUTH);
+    }
 }
